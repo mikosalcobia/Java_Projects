@@ -8,7 +8,7 @@ public class Bin2Dec {
         Scanner scanner = new Scanner(System.in);
 
         // User input
-        System.out.print("Enter up to 8 binary digits: ");
+        System.out.print("Enter up to binary digits: ");
         String binaryInput = scanner.nextLine();
 
         // Check if the input is valid
@@ -25,12 +25,24 @@ public class Bin2Dec {
         scanner.close();
     }
 
-    // Function to check if the input is a valid binary string
+    
+    /**
+    * Checks whether a given string represents a valid binary number.
+    *
+    * @param binaryInput The string to be validated as a binary number.
+    * @return {@code true} if the input is a valid binary number, {@code false} otherwise.
+    */
     private static boolean isValidBinary(String binaryInput) {
-        return binaryInput.matches("[01]+") && binaryInput.length() <= 8;
+        return binaryInput.matches("[01]+");
     }
 
-    // Function to convert binary to decimal
+     /**
+     * Converts a binary number represented as a string to its decimal equivalent.
+     *
+     * @param binaryInput The binary number as a string to be converted to decimal.
+     * @return The decimal equivalent of the binary number.
+     */
+
     private static int binaryToDecimal(String binaryInput) {
         int decimalResult = 0;
         int length = binaryInput.length();
