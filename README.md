@@ -1,2 +1,3 @@
 # Java_Projects
- Projetos em java
+ Java projects that i made to practise.
+ I hope that you enjoy.
